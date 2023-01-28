@@ -1,0 +1,19 @@
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: $color-bg-body;
+  position: relative;
+  @include font-primary();
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+  color: inherit;
+  &:focus {
+    outline: none;
+  }
+}

@@ -1,4 +1,20 @@
 @import './style/abstract/variables';
+@import './style/abstract/mixins';
+@import './style/abstract/plaseholders';
 
 @import './style/base/base';
 @import './style/base/normalize';
+
+@import './style/components/ico';
+
+@import './style/layout/wrapper';
+@import './style/layout/columns';
+
+@import './style/vendors/font-awesome-4.7.0/scss/font-awesome.scss';
+
+@import './components/header/header-info/style.scss';
+@import './components/header/header-nav/style.scss';
+@import './components/header/style.scss';
+@import './components/UI/button/style.scss';
+
+@import './pages/404/style.scss';

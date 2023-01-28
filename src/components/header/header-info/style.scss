@@ -1,0 +1,76 @@
+.header-info__logo-img {
+  max-width: 297px;
+  max-height: 60px;
+}
+
+.header-info__schedule {
+  max-width: 215px;
+  p {
+    font-weight: 500;
+    line-height: 24px;
+  }
+}
+
+.header-info__to-order {
+  display: flex;
+  align-items: center;
+
+  .to-order__icon {
+    display: inline-block;
+    text-align: center;
+    line-height: 50px;
+    width: 50px;
+    height: 50px;
+    border: 7px solid $color-border-around-ico;
+    border-radius: 50%;
+    font-size: 2rem;
+    margin-right: 8px;
+  }
+
+  .to-order__link {
+    border-bottom: 1px solid $color-text-dark; 
+    padding-bottom: 5px;
+  }
+}
+
+.contacts {
+  @include flex();
+  gap: 4px;
+}
+
+.contacts-wrapper {
+  position: relative;
+
+  .contacts__tel {
+    @include font-heading($size: 2.2rem, $weight: 800);
+  }
+
+  .contacts__icons {
+    padding-top: 6px;
+    @include flex($justify: space-around);
+    .ico {
+      display: inline-block;
+      width: 30px;
+      height: 26px;
+      background-position: center center;
+      background-size: contain;
+    }
+    .viber {
+      background: url(../../../../public/assets/icons/viber-ico.png) no-repeat;
+    }
+    .watsapp {
+      background: url(../../../../public/assets/icons/whatsapp-ico.png) no-repeat;
+    }
+    .telegram {
+      background: url(../../../../public/assets/icons/telegram-ico.png) no-repeat;
+    }
+  }
+}
+
+.header-info__button {
+  button {
+    width: 238px;
+    height: 64px;
+    border-radius: 6px;
+  }
+}

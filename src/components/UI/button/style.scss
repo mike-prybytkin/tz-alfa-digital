@@ -1,0 +1,4 @@
+.button_colored {
+  @extend %button-colored;
+  box-shadow: $button-shadow;
+}

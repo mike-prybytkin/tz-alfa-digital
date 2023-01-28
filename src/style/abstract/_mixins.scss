@@ -1,0 +1,29 @@
+@mixin font-primary ($size: 1.6rem, $weight: 400, $color: $color-text-dark) {
+  font-family: 'Raleway', 'Verdana', 'Geneva', sans-serif;
+  font-size: $size;
+  font-weight: $weight;
+  color: $color;
+}
+
+@mixin font-heading ($size: 2.4rem, $weight: 900, $color: $color-text-heading) {
+  font-family: 'Montserrat', 'Arial Narrow', 'Arial', sans-serif;
+  font-size: $size;
+  font-weight: $weight;
+  color: $color;
+}
+
+@mixin flex ($justify: center, $align: center, $flow: row wrap) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-flow: $flow;
+}
+
+@mixin columns () {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  >* {
+    flex-basis: auto;
+  }
+}

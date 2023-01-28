@@ -1,0 +1,14 @@
+%transition {
+  transition: all .3s ease-in-out;
+}
+
+%button-colored {
+  @extend %transition;
+  background: $color-main;
+  color: $color-light;
+  border: 1px solid $color-main;
+  &:hover {
+    border-color: $color-main-hover;
+    background: $color-main-hover;
+  }
+}
