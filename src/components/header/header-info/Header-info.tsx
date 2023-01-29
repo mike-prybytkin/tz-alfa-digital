@@ -18,7 +18,7 @@ const HeaderInfo = () => {
       <div className="header-info__to-order to-order">
         <i className="ico ico_colored to-order__icon fa fa-cubes"></i>
         <NavLink to="/call">
-          <p className="to-order__link">Заказать 3D-макет дома</p>
+          <p className="link to-order__link">Заказать 3D-макет дома</p>
         </NavLink>
       </div>
       <div className="contacts">

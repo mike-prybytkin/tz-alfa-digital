@@ -1,0 +1,39 @@
+.nav__category {
+  cursor: pointer;
+}
+
+.nav-item-list {
+  @extend %transition;
+  width: max-content;
+  background: $color-main;
+  box-shadow: $box-shadow;
+  padding: 10px;
+  position: absolute;
+  top: 0px;
+  opacity: 0;
+  cursor: default;
+  z-index: -1;
+
+  li {
+    cursor: pointer;
+    margin-bottom: 10px;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.nav-item-list.open {
+  opacity: 1;
+  top: 30px;
+  z-index: 0;
+}
+
+.nav__item-ico {
+  @extend %transition;
+}
+
+.nav__item-ico.open {
+  transform: rotate(180deg);
+}

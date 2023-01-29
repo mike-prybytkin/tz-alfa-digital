@@ -1,0 +1,13 @@
+.error {
+  text-align: center;
+  padding-top: 5%;
+
+  .error__heading {
+    color: $color-text-heading;
+    font-size: 4rem;
+  }
+
+  .error__link {
+    font-size: 2rem;
+  }
+}

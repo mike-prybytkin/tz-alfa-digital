@@ -6,7 +6,7 @@ const StoreProviderContext = createContext({} as IStoreProviderContext);
 const StoreProvider = (props: StoreProviderProps) => {
   const { children } = props;
 
-  return <StoreProviderContext.Provider>{children}</StoreProviderContext.Provider>;
+  return <StoreProviderContext.Provider value={{}}>{children}</StoreProviderContext.Provider>;
 };
 
 export { StoreProvider, StoreProviderContext };

@@ -1,0 +1,25 @@
+.nav-wrapper {
+  height: 64px;
+  background: $color-bg-nav;
+  @include flex();
+  flex-grow: 1;
+}
+
+.nav {
+  flex-grow: 1;
+  max-width: 1044px;
+}
+
+.nav__items {
+  @include flex($justify: space-between);
+  padding: 0;
+  font-weight: 500;
+  color: $color-light;
+  .nav__item {
+    position: relative;
+    .nav__item-ico {
+      display: inline-block;
+      margin-left: 8px;
+    }
+  }
+}

@@ -4,9 +4,9 @@ import { Page404Props } from './types';
 
 const Page404 = (props: Page404Props) => {
   return (
-    <div className="main-container">
-      <h1>{props.heading}</h1>
-      <Link className="back-to-home-link" to="/">
+    <div className="error">
+      <h2 className="error__heading">{props.heading}</h2>
+      <Link className="link error__link" to="/">
         Вернуться на главную
       </Link>
     </div>

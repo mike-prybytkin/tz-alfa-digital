@@ -6,6 +6,7 @@
 @import './style/base/normalize';
 
 @import './style/components/ico';
+@import './style/components/link';
 
 @import './style/layout/wrapper';
 @import './style/layout/columns';
@@ -16,5 +17,7 @@
 @import './components/header/header-nav/style.scss';
 @import './components/header/style.scss';
 @import './components/UI/button/style.scss';
+@import './components/header/nav-item-list/style.scss';
+@import './components/navigation-link/style.scss';
 
 @import './pages/404/style.scss';
