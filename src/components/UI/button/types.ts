@@ -1,1 +1,7 @@
-export type ButtonProps = { text: string; type: 'colored' | 'bordered' };
+import { ReactNode } from 'react';
+
+export type ButtonProps = {
+  text: string | ReactNode;
+  type: 'colored' | 'bordered';
+  handler?: () => void;
+};

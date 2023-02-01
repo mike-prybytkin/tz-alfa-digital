@@ -1,0 +1,83 @@
+@mixin border ($color) {
+  border: 3px solid $color;
+  border-radius: 3px;
+}
+
+@mixin scrollbar ($color, $br-radius) {
+  background-color: $color;
+  border-radius: $br-radius;
+}
+
+.slider-wrapper {
+  width: 864px;
+  height: 435px;
+
+  .slick-slider {
+    direction:rtl !important;
+    
+    .slider__preview-img {
+      width: 134px;
+      height: 93px;
+    }
+    
+    .slider__wrapper-img {
+      position: relative;
+
+      .button {
+        position: absolute;
+        right: 0;
+        bottom: 0px;
+        box-shadow: none;
+        width: 50px;
+        height: 50px;
+        font-size: 3rem;
+      }
+
+      .slider__select-img {
+        width: 671px;
+        height: 435px;
+        object-fit: cover;
+      }
+    }
+    
+    .slick-dots {
+      display: flex !important;
+      flex-direction: column;
+      height: 100%;
+      left: 0;
+      top: 0;
+      width: auto;
+      height: 435px;
+      padding-left: 20px;
+      overflow-y: scroll;
+
+      &::-webkit-scrollbar {
+        width: 8px;
+      }
+
+      &::-webkit-scrollbar-track {
+        @include scrollbar($color: $color-bg-scrollbar, $br-radius: 4px);
+      }
+
+      &::-webkit-scrollbar-thumb {
+        @include scrollbar($color: $color-main, $br-radius: 4px);
+      }
+      
+      li {
+        @extend %transition;
+        display: inline-block;
+        width: 134px;
+        height: 93px;
+        margin-bottom: 12px;
+        @include border(transparent);
+        &:last-of-type {
+          margin-bottom: 0
+        }
+        &.slick-active {
+          @include border($color-main);
+          filter: $slider-preview-img-shadow;
+        }
+      }
+    }
+  }
+}

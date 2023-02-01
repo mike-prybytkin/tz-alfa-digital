@@ -12,6 +12,7 @@
 @import './style/layout/columns';
 
 @import './style/vendors/font-awesome-4.7.0/scss/font-awesome.scss';
+@import './style/vendors/react-slick';
 
 @import './components/header/header-info/style.scss';
 @import './components/header/header-nav/style.scss';
@@ -19,5 +20,6 @@
 @import './components/UI/button/style.scss';
 @import './components/header/nav-item-list/style.scss';
 @import './components/navigation-link/style.scss';
+@import './components/slick-slider/style.scss';
 
 @import './pages/404/style.scss';
