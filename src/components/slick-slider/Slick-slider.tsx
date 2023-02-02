@@ -5,10 +5,11 @@ import { StoreProviderContext } from 'components/store/store-provider';
 
 const SlickSlider = () => {
   const context = useContext(StoreProviderContext);
-  const { filterSystem } = context;
-  const { name, images } = filterSystem;
+  const { filterSystem, openModal } = context;
+  const { images } = filterSystem;
 
   const openImgInModal = (imgUrl: string) => {
+    openModal(<img className="slider__modal-img" src={`${imgUrl}`} />);
   };
 
   const settings = {
@@ -33,7 +34,6 @@ const SlickSlider = () => {
 
   return (
     <div className="slider-wrapper">
-      <h2 className="slider-wrapper__heading">{name}</h2>
       <Slider {...settings}>
         {images.map((url) => (
           <div key={url} className="slider__wrapper-img">

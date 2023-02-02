@@ -1,10 +1,10 @@
 import React from 'react';
-import SlickSlider from 'components/slick-slider/Slick-slider';
+import AboutFilterSystem from 'components/about-filter-system/about-filter-system';
 
 const Welcome = () => {
   return (
     <div className="wrapper">
-      <SlickSlider />
+      <AboutFilterSystem />
     </div>
   );
 };

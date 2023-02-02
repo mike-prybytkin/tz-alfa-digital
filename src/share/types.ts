@@ -4,6 +4,7 @@ interface NavItemProps {
 }
 
 interface IFilterSystem {
+  id: string;
   name: string;
   prise: string;
   oldPrise: string;

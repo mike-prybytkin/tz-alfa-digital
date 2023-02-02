@@ -7,4 +7,8 @@ export interface StoreProviderProps {
 
 export interface IStoreProviderContext {
   filterSystem: IFilterSystem;
+  modalIsOpen: boolean;
+  openModal: (content: JSX.Element) => void;
+  closeModal: () => void;
+  modalWindowContent: JSX.Element;
 }
