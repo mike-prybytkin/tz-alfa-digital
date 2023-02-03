@@ -1,0 +1,10 @@
+.block-separator {
+  @include flex($justify: space-between);
+  padding-top: 30px;
+
+  .block-separator__img {
+    width: 240px;
+    height: 160px;
+    object-fit: cover;
+  }
+}
