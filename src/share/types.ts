@@ -17,4 +17,12 @@ interface IFilterSystem {
   description: string;
 }
 
-export { NavItemProps, IFilterSystem };
+interface IUserContactsForm {
+  name: string;
+  phone: string;
+  question?: string;
+}
+
+type InputFieldName = keyof IUserContactsForm;
+
+export { NavItemProps, IFilterSystem, IUserContactsForm, InputFieldName };

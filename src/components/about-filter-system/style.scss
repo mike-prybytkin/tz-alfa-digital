@@ -6,6 +6,13 @@
 .about-filter__content {
   @include flex($justify: flex-start, $align: flex-start);
   gap: 4%;
+
+  .about-filter__slider-contact {
+    h4 {
+      @include font-heading ($size: 2.4rem, $weight: 800);
+      margin: 80px 0 25px;
+    }
+  }
 }
 
 .filter-characteristics {

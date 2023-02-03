@@ -1,0 +1,12 @@
+.user-contacts-form {
+  width: 506px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  .user-contacts-form__button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 3px;
+  }
+}

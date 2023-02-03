@@ -14,6 +14,7 @@
 @import './style/vendors/font-awesome-4.7.0/scss/font-awesome.scss';
 @import './style/vendors/react-slick';
 
+@import './components/app/style.scss';
 @import './components/header/header-info/style.scss';
 @import './components/header/header-nav/style.scss';
 @import './components/header/style.scss';
@@ -22,5 +23,7 @@
 @import './components/navigation-link/style.scss';
 @import './components/slick-slider/style.scss';
 @import './components/about-filter-system/style.scss';
+@import './components/UI/text-input/style.scss';
+@import './components/about-filter-system-form/style.scss';
 
 @import './pages/404/style.scss';

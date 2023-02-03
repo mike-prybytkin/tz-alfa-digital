@@ -2,6 +2,7 @@ import React, { useContext } from 'react';
 import SlickSlider from 'components/slick-slider/Slick-slider';
 import ModalWindow from 'components/modal-window/modal-window';
 import { StoreProviderContext } from 'components/store/store-provider';
+import AboutFilterSystemForm from 'components/about-filter-system-form/about-filter-system-form';
 
 const AboutFilterSystem = () => {
   const context = useContext(StoreProviderContext);
@@ -21,7 +22,11 @@ const AboutFilterSystem = () => {
     <div className="about-filter">
       <h2 className="about-filter__heading">{name}</h2>
       <div className="about-filter__content">
-        <SlickSlider />
+        <div className="about-filter__slider-contact">
+          <SlickSlider />
+          <h4>Обсудим детали?</h4>
+          <AboutFilterSystemForm />
+        </div>
         <div className="filter-characteristics">
           <div className="filter-characteristics__grid">
             <div>Количество пользователей:</div>

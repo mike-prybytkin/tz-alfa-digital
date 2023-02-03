@@ -1,0 +1,24 @@
+.text-input {
+  .text-input__label {
+    width: 100%;
+    position: relative;
+
+    .text-input__input {
+      width: inherit;
+      border: 1px solid $color-main;
+      padding: 10px;
+      border-radius: 3px;
+      outline: none;
+      box-sizing: border-box;
+    }
+
+    .text-input__error {
+      left: 0;
+      bottom: -24px;
+      color: $color-error;
+      position: absolute;
+      width: max-content;
+      font-size: 1.4rem;
+    }
+  }
+}
