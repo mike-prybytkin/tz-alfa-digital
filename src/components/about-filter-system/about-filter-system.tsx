@@ -20,7 +20,9 @@ const AboutFilterSystem = () => {
 
   return (
     <div className="about-filter">
-      <h2 className="about-filter__heading">{name}</h2>
+      <h2 className="about-filter__heading" id="about-filter__heading">
+        {name}
+      </h2>
       <div className="about-filter__content">
         <div className="about-filter__slider-contact">
           <SlickSlider />

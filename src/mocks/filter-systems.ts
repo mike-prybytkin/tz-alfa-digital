@@ -54,10 +54,10 @@ const filterSystems = [
     consumedElectricity: '1500 Вт/сут.',
     salvoDischarge: '220л',
     images: [
+      './assets/slider/img-11.png',
       './assets/slider/img-8.png',
       './assets/slider/img-9.png',
       './assets/slider/img-10.png',
-      './assets/slider/img-11.png',
       './assets/slider/img-1.png',
       './assets/slider/img-2.png',
       './assets/slider/img-3.png',
@@ -80,11 +80,11 @@ const filterSystems = [
     consumedElectricity: '1500 Вт/сут.',
     salvoDischarge: '220л',
     images: [
+      './assets/slider/img-4.png',
+      './assets/slider/img-7.png',
       './assets/slider/img-8.png',
       './assets/slider/img-9.png',
       './assets/slider/img-10.png',
-      './assets/slider/img-4.png',
-      './assets/slider/img-7.png',
     ],
     description:
       'Индивидуальная система биологической очистки Топас-С 5 Пр, как и другие УОСВ из данного модельного ряда, очищают стоки до 98% без вреда для экологии. Все модификации септика ТОПАС-С 5 Пр очищают до 1 м3 сточных вод в сутки и имеют максимальный залповый сброс в районе 220 литров. Уже отработанную воду можно накапливать в отдельном резервуаре и в дальнейшем использовать для хозяйственных нужд или производить сброс очищенной воды в ливневую канаву, либо с помощью встороенного насоса.',
@@ -100,10 +100,10 @@ const filterSystems = [
     consumedElectricity: '1500 Вт/сут.',
     salvoDischarge: '250л',
     images: [
-      './assets/slider/img-8.png',
-      './assets/slider/img-4.png',
       './assets/slider/img-5.png',
       './assets/slider/img-6.png',
+      './assets/slider/img-4.png',
+      './assets/slider/img-8.png',
       './assets/slider/img-7.png',
     ],
     description:

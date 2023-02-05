@@ -19,12 +19,6 @@ $normalized_font_family: sans-serif !default;
 
 $normalize_headings: true !default;
 
-$h1_font_size: 2em !default;
-$h2_font_size: 1.5em !default;
-$h3_font_size: 1.17em !default;
-$h4_font_size: 1em !default;
-$h5_font_size: 0.83em !default;
-$h6_font_size: 0.75em !default;
 
 $h1_margin: 0.67em 0 !default;
 $h2_margin: 0.83em 0 !default;
@@ -154,38 +148,6 @@ a {
 
 // Addresses font sizes and margins set differently in IE6/7
 // Addresses font sizes within 'section' and 'article' in FF4+, Chrome, S5
-
-@if $normalize_headings == true {
-    h1 {
-        font-size: $h1_font_size;
-        margin: $h1_margin;
-    }
-
-    h2 {
-        font-size: $h2_font_size;
-        margin: $h2_margin;
-    }
-
-    h3 {
-        font-size: $h3_font_size;
-        margin: $h3_margin;
-    }
-
-    h4 {
-        font-size: $h4_font_size;
-        margin: $h4_margin;
-    }
-
-    h5 {
-        font-size: $h5_font_size;
-        margin: $h5_margin;
-    }
-
-    h6 {
-        font-size: $h6_font_size;
-        margin: $h6_margin;
-    }
-}
 
 // Addresses styling not present in IE 8/9, S5, Chrome
 

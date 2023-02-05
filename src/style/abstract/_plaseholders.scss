@@ -7,8 +7,21 @@
   background: $color-main;
   color: $color-light;
   border: 1px solid $color-main;
+  border-radius: 3px;
   &:hover {
     border-color: $color-main-hover;
     background: $color-main-hover;
+  }
+}
+
+%button-bordered {
+  @extend %transition;
+  background: transparent;
+  color: $color-text-dark;
+  border: 1px solid $color-button-border;
+  border-radius: 3px;
+  &:hover {
+    box-shadow: $box-shadow;
+    text-shadow: $text-shadow-link;
   }
 }

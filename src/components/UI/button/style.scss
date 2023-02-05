@@ -2,3 +2,7 @@
   @extend %button-colored;
   box-shadow: $button-shadow;
 }
+
+.button_bordered {
+  @extend %button-bordered;
+}

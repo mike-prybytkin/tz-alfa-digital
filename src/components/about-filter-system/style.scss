@@ -1,5 +1,4 @@
 .about-filter__heading {
-  @include font-heading($size: 3.8rem, $weight: 900);
   margin: 40px 0;
 }
 
@@ -9,7 +8,6 @@
 
   .about-filter__slider-contact {
     h4 {
-      @include font-heading ($size: 2.4rem, $weight: 800);
       margin: 80px 0 25px;
     }
   }
@@ -49,9 +47,9 @@
   }
 
   .filter-characteristics__description {
+    height: 340px;
     margin-top: 50px;
     h4 {
-      @include font-heading ($size: 2.4rem, $weight: 800);
       margin-bottom: 25px;
     }
 

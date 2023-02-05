@@ -1,0 +1,59 @@
+.slider-all-filters {
+  .slick-slider.slick-initialized {
+    text-align: center;
+  
+    .slick-list {
+      padding: 5px 0;
+    }
+  }
+}
+
+.card {
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 3px;
+  max-width: 400px;
+  padding: 25px 20px;
+
+  .card__content {
+    @include flex($justify: space-between, $align: flex-start);
+    border-bottom: 1px dashed $color-main;
+    padding-bottom: 10px;
+  }
+
+  .card__buttons {
+    padding-top: 30px;
+    @include flex($justify: space-between);
+    button {
+      width: 180px;
+      padding: 8px 0;
+    }
+  }
+}
+
+.card__info {
+  text-align: left;
+  .card__name {
+    margin: 0 0 10px;
+  }
+  .card__number-of-users {
+    color: $color-text-info;
+  }
+
+  .card__old-price {
+    text-decoration: line-through;
+  }
+
+  .card__price {
+    @include font-heading($color: $color-main);
+    margin-top: 0;
+  }
+
+  .card__efficiency,
+  .card__salvo-discharge {
+    font-weight: 600;
+    font-size: 1.6rem;
+    span {
+      font-weight: 400;
+    }
+  }
+}

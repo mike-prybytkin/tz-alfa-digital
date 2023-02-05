@@ -3,17 +3,7 @@ import { IStoreProviderContext, StoreProviderProps } from './types';
 import filterSystems from 'mocks/filter-systems';
 import { IFilterSystem } from 'share/types';
 
-const StoreProviderContext = createContext<IStoreProviderContext>({
-  filterSystem: filterSystems[0],
-  modalIsOpen: false,
-  openModal: function (): void {
-    throw new Error('Function not implemented.');
-  },
-  closeModal: function (): void {
-    throw new Error('Function not implemented.');
-  },
-  modalWindowContent: <Fragment></Fragment>,
-});
+const StoreProviderContext = createContext({} as IStoreProviderContext);
 
 const StoreProvider = (props: StoreProviderProps) => {
   const { children } = props;
@@ -34,10 +24,12 @@ const StoreProvider = (props: StoreProviderProps) => {
     <StoreProviderContext.Provider
       value={{
         filterSystem,
+        setFilterSystem,
         modalIsOpen,
         openModal,
         closeModal,
         modalWindowContent,
+        filterSystems,
       }}
     >
       {children}

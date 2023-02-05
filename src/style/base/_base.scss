@@ -22,3 +22,15 @@ a {
 li {
   list-style-type: none;
 }
+
+h2 {
+  @include font-heading($size: 3.8rem);
+}
+
+h3 {
+  @include font-heading ($size: 3.2rem);
+}
+
+h4 {
+  @include font-heading ($size: 2.4rem, $weight: 800);
+}
