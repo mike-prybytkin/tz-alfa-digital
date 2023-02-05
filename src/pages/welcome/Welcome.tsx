@@ -2,6 +2,7 @@ import React from 'react';
 import AboutFilterSystem from 'components/about-filter-system/about-filter-system';
 import BlockSeparator from 'components/block-separator/block-separator';
 import SliderAllFilters from 'components/slider-all-filters/slider-all-filters';
+import Contacts from 'components/contacts/contacts';
 
 const Welcome = () => {
   return (
@@ -16,6 +17,7 @@ const Welcome = () => {
           <SliderAllFilters />
         </div>
       </div>
+      <Contacts />
     </div>
   );
 };

@@ -68,7 +68,7 @@ const SliderAllFilters = () => {
     autoplaySpeed: 3000,
     autoplay: true,
   };
-  // about-filter__heading
+
   return (
     <div className="slider-all-filters">
       <Slider {...settings}>
