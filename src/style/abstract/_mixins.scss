@@ -27,3 +27,8 @@
     flex-basis: auto;
   }
 }
+
+@mixin scrollbar ($color, $br-radius) {
+  background-color: $color;
+  border-radius: $br-radius;
+}

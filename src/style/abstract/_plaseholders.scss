@@ -25,3 +25,18 @@
     text-shadow: $text-shadow-link;
   }
 }
+
+%scrollbar {
+  overflow-y: scroll;
+  &::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  &::-webkit-scrollbar-track {
+    @include scrollbar($color: $color-bg-scrollbar, $br-radius: 4px);
+  }
+
+  &::-webkit-scrollbar-thumb {
+    @include scrollbar($color: $color-main, $br-radius: 4px);
+  }
+}

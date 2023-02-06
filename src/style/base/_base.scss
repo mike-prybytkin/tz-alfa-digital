@@ -7,7 +7,7 @@ body {
   background-color: $color-bg-body;
   position: relative;
   @include font-primary();
-  overflow-y: overlay;
+  @extend %scrollbar;
 }
 
 a {

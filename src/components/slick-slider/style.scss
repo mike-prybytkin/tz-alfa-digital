@@ -3,11 +3,6 @@
   border-radius: 3px;
 }
 
-@mixin scrollbar ($color, $br-radius) {
-  background-color: $color;
-  border-radius: $br-radius;
-}
-
 .slider-wrapper {
   width: 864px;
   height: 435px;
@@ -49,19 +44,7 @@
       width: auto;
       height: 435px;
       padding-left: 20px;
-      overflow-y: scroll;
-
-      &::-webkit-scrollbar {
-        width: 8px;
-      }
-
-      &::-webkit-scrollbar-track {
-        @include scrollbar($color: $color-bg-scrollbar, $br-radius: 4px);
-      }
-
-      &::-webkit-scrollbar-thumb {
-        @include scrollbar($color: $color-main, $br-radius: 4px);
-      }
+      @extend %scrollbar;
       
       li {
         @extend %transition;
