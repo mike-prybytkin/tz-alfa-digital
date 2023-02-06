@@ -3,7 +3,7 @@
   background-position: bottom -300px right;
   position: relative;
   z-index: 1;
-
+  overflow: hidden;
 
   align-items: center;
   .contacts-section__background {
@@ -22,6 +22,7 @@
     .contacts-section__filter-img {
       width: 45vw;
       height: auto;
+      margin-bottom: -4px;
     }
   }
 }

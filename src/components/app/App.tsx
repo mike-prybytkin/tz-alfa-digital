@@ -8,6 +8,7 @@ import Welcome from 'pages/welcome/Welcome';
 import Communication from 'pages/communication/Communication';
 import NavigationLinks from 'pages/navigation-links/Navigation-links';
 import NavigationLink from 'components/navigation-link/Navigation-link';
+import Footer from 'components/footer/footer';
 
 export const AppContext = createContext({} as IAppContext);
 
@@ -28,6 +29,7 @@ const App = () => {
           <Route path="/*" element={<Navigate to="/not-found" />} />
         </Routes>
       </div>
+      <Footer />
     </div>
   );
 };

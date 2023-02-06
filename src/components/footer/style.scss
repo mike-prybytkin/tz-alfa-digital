@@ -1,0 +1,68 @@
+.footer {
+  background: $color-bg-footer;
+  padding: 2% 5%;
+  color: $color-light;
+  gap: 5%;
+}
+
+.footer-col-1 {
+  @include flex($align: flex-start, $flow: column nowrap);
+  gap: 50px;
+
+  .footer-col-1__logo-img {
+    width: 284px;
+    height: 57px;
+    cursor: pointer;
+  }
+
+  button {
+    width: 238px;
+    height: 64px;
+    color: $color-light;
+    border: 2px solid $color-light;
+  }
+}
+
+.footer-col-2,
+.footer-col-3 {
+  ul {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    @include flex($justify: space-around, $align: flex-start, $flow: column nowrap);
+
+    li {
+      cursor: pointer;
+    }
+  }
+}
+
+.footer-col-4 {
+  max-width: 270px;
+
+  ul {
+    padding: 0;
+    li {
+      display: inline-block;
+      margin-right: 16px;
+      &:last-of-type {
+        margin-right: 0;
+      }
+      a {
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+  }
+
+  .footer-col-4__author {
+    margin: 32px 0 0;
+  }
+
+  .footer-col-4__logo-img {
+    width: 240px;
+    height: 61px;
+    margin-left: -6px;
+  }
+}

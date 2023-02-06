@@ -8,6 +8,7 @@ const HeaderInfo = () => {
       <NavLink to="/">
         <img
           className="header-info__logo-img"
+          id="header-info__logo-img"
           src="./assets/logo/company-logo.png"
           alt="alfa repaip building"
         />
