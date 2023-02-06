@@ -1,0 +1,10 @@
+.communication-page {
+  @include flex($justify: center, $flow: column nowrap);
+  padding: 5% 0 10%;
+
+  .communication-page__heading {
+    max-width: 600px;
+    text-align: center;
+    margin-top: 0;
+  }
+}
