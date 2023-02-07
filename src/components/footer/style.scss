@@ -3,16 +3,26 @@
   padding: 2% 5%;
   color: $color-light;
   gap: 5%;
+  @include media-big-desktop {
+    padding: 2% 2%;
+  }
 }
 
 .footer-col-1 {
   @include flex($align: flex-start, $flow: column nowrap);
   gap: 50px;
+  @include media-big-desktop {
+      gap: 30px;
+  }
 
   .footer-col-1__logo-img {
     width: 284px;
     height: 57px;
     cursor: pointer;
+    @include media-big-desktop {
+      max-width: 250px;
+      max-height: auto;
+    }
   }
 
   button {
@@ -39,6 +49,13 @@
 
 .footer-col-4 {
   max-width: 270px;
+  @include media-big-desktop {
+    p {
+      &:first-of-type {
+        margin-top: 10px;
+      }
+    }
+  }
 
   ul {
     padding: 0;
@@ -58,11 +75,18 @@
 
   .footer-col-4__author {
     margin: 32px 0 0;
+    @include media-big-desktop{
+      margin-top: 20px;
+    }
   }
 
   .footer-col-4__logo-img {
     width: 240px;
     height: 61px;
     margin-left: -6px;
+    @include media-big-desktop{
+      width: 200px;
+      height: auto;
+    }
   }
 }

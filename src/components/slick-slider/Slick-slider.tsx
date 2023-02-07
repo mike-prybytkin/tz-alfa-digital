@@ -30,6 +30,7 @@ const SlickSlider = () => {
     vertical: true,
     verticalSwiping: true,
     focusOnSelect: true,
+    // responsive: [{ breakpoint: 1200, settings: { vertical: false, verticalSwiping: false } }],
   };
 
   return (

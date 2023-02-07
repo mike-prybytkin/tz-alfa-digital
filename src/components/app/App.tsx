@@ -23,9 +23,9 @@ const App = () => {
           <Route path="/not-found" element={<Page404 heading="Ошибка 404" />} />
           <Route path="/*" element={<Navigate to="/not-found" />} />
         </Routes>
+        <Toast position="bottom-right" theme="light" />
       </div>
       <Footer />
-      <Toast position="bottom-right" theme="light" />
     </div>
   );
 };

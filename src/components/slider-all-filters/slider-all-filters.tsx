@@ -67,6 +67,7 @@ const SliderAllFilters = () => {
     adaptiveHeight: true,
     autoplaySpeed: 3000,
     autoplay: true,
+    responsive: [{ breakpoint: 1580, settings: { slidesToShow: 2 } }],
   };
 
   return (

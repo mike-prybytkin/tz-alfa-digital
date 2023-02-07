@@ -8,6 +8,9 @@
 .nav {
   flex-grow: 1;
   max-width: 1044px;
+  @include media-big-desktop {
+    max-width: 850px;
+  }
 }
 
 .nav__items {

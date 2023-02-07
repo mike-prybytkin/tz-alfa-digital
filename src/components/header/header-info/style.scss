@@ -1,10 +1,15 @@
 .header-info {
   padding-bottom: 20px;
+  align-items: center;
 }
 
 .header-info__logo-img {
   max-width: 297px;
   max-height: 60px;
+  @include media-big-desktop {
+    max-width: 250px;
+    max-height: auto;
+  }
 }
 
 .header-info__schedule {
@@ -12,6 +17,10 @@
   p {
     font-weight: 500;
     line-height: 24px;
+  }
+  @include media-big-desktop {
+    font-size: 1.6rem;
+    max-width: 190px;
   }
 }
 
@@ -29,6 +38,11 @@
     border-radius: 50%;
     font-size: 2rem;
     margin-right: 8px;
+    @include media-big-desktop {
+      width: 40px;
+      height: 40px;
+      line-height: 40px;
+    }
   }
 
   .to-order__link {
@@ -40,6 +54,15 @@
 .contacts {
   @include flex();
   gap: 4px;
+  @include media-big-desktop {
+    gap: 0;
+  }
+
+  .contacts__ico {
+    @include media-big-desktop {
+      transform: scale(0.8);
+    }
+  }
 }
 
 .contacts-wrapper {
@@ -47,6 +70,9 @@
 
   .contacts__tel {
     @include font-heading($size: 2.2rem, $weight: 800);
+    @include media-big-desktop {
+      font-size: 1.8rem;
+    }
   }
 
   .contacts__icons {
@@ -58,6 +84,9 @@
       height: 26px;
       background-position: center center;
       background-size: contain;
+      @include media-big-desktop {
+        transform: scale(0.8);
+      }
     }
     .viber {
       background: url(../../../../public/assets/icons/viber-ico.png) no-repeat;
@@ -76,5 +105,9 @@
     width: 238px;
     height: 64px;
     border-radius: 6px;
+    @include media-big-desktop {
+      width: 180px;
+      height: 54px;
+    }
   }
 }

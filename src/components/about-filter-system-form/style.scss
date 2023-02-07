@@ -3,6 +3,9 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
+  @include media-big-desktop {
+    width: 400px;
+  }
 
   .user-contacts-form__button {
     width: 100%;

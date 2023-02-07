@@ -6,6 +6,10 @@
 .slider-wrapper {
   width: 864px;
   height: 435px;
+  @include media-big-desktop {
+    width: 600px;
+    height: 250px;
+  }
 
   .slick-slider {
     direction:rtl !important;
@@ -32,6 +36,10 @@
         width: 671px;
         height: 435px;
         object-fit: cover;
+        @include media-big-desktop {
+          width: 440px;
+          height: 250px;
+        }
       }
     }
     
@@ -45,6 +53,10 @@
       height: 435px;
       padding-left: 20px;
       @extend %scrollbar;
+      @include media-big-desktop {
+        height: 250px;
+        padding-left: 0;
+      }
       
       li {
         @extend %transition;

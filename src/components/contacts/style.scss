@@ -4,6 +4,9 @@
   position: relative;
   z-index: 1;
   overflow: hidden;
+  @include media-big-desktop {
+    background-position: bottom -300px right -80px;
+  }
 
   align-items: center;
   .contacts-section__background {
@@ -18,11 +21,30 @@
       top: -220px;
       width: 45vw;
       height: auto;
+      @include media-big-desktop {
+        left: -280px;
+      }
     } 
     .contacts-section__filter-img {
-      width: 45vw;
+      width: 40vw;
       height: auto;
       margin-bottom: -4px;
+    }
+  }
+}
+
+.contacts-section__form {
+  @include media-big-desktop {
+    text-align: center;
+    max-width: 400px;
+  }
+}
+
+.contacts-section__background-right {
+  .contacts-section__wrench-img {
+    @include media-big-desktop {
+      width: 150px;
+      height: auto;
     }
   }
 }

@@ -3,7 +3,7 @@ import ContactsSectionForm from 'components/contacts-section-form/contacts-secti
 
 const Contacts = () => {
   return (
-    <div className="contacts-section layout-2-column">
+    <div className="contacts-section layout-3-column">
       <div className="contacts-section__background">
         <img
           className="contacts-section__sky-img"

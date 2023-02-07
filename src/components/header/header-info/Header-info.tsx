@@ -23,11 +23,7 @@ const HeaderInfo = () => {
         </NavLink>
       </div>
       <div className="contacts">
-        <img
-          className="contacts__ico"
-          src="./assets/icons/contacts-ico.png"
-          alt="alfa repaip building"
-        />
+        <img className="contacts__ico" src="./assets/icons/contacts-ico.png" alt="contacts info" />
         <div className="contacts-wrapper">
           <a className="contacts__tel" href="tel:+79151685550">
             +7 (915) 168-55-50
