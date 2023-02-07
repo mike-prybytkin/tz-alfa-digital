@@ -3,6 +3,7 @@ import { useForm } from 'react-hook-form';
 import { SubmitHandler } from 'react-hook-form/dist/types';
 import TextInput from 'components/UI/text-input/text-input';
 import { IUserContactsForm } from 'share/types';
+import { notifyMessage } from 'components/UI/toast/toast';
 
 const initialState: IUserContactsForm = {
   name: '',
@@ -25,6 +26,7 @@ const AboutFilterSystemForm = () => {
       phone: phone,
     });
     reset();
+    notifyMessage({ message: `${name} спасибо! Мы скоро перезвоним!`, type: 'success' });
   };
   return (
     <form className="user-contacts-form" onSubmit={handleSubmit(onSubmit)}>

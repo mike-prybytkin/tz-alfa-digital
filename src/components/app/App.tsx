@@ -1,7 +1,5 @@
-import React, { useEffect, useState, useCallback, createContext, useContext } from 'react';
+import React from 'react';
 import { Route, Routes, Navigate } from 'react-router-dom';
-import { IAppContext } from './types';
-// import { StoreProviderContext } from 'components/store/store-provider';
 import Header from 'components/header/header';
 import Page404 from 'pages/404/404';
 import Welcome from 'pages/welcome/Welcome';
@@ -9,12 +7,9 @@ import Communication from 'pages/communication/Communication';
 import NavigationLinks from 'pages/navigation-links/Navigation-links';
 import NavigationLink from 'components/navigation-link/Navigation-link';
 import Footer from 'components/footer/footer';
-
-export const AppContext = createContext({} as IAppContext);
+import Toast from 'components/UI/toast/toast';
 
 const App = () => {
-  // const context = useContext(StoreProviderContext);
-
   return (
     <div className="App">
       <Header />
@@ -30,6 +25,7 @@ const App = () => {
         </Routes>
       </div>
       <Footer />
+      <Toast position="bottom-right" theme="light" />
     </div>
   );
 };

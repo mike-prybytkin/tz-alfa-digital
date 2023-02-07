@@ -1,11 +1,11 @@
 import { ReactNode, Dispatch, SetStateAction } from 'react';
 import { IFilterSystem } from 'share/types';
 
-export interface StoreProviderProps {
+interface StoreProviderProps {
   children: ReactNode;
 }
 
-export interface IStoreProviderContext {
+interface IStoreProviderContext {
   filterSystem: IFilterSystem;
   setFilterSystem: Dispatch<SetStateAction<IFilterSystem>>;
   modalIsOpen: boolean;
@@ -14,3 +14,5 @@ export interface IStoreProviderContext {
   modalWindowContent: JSX.Element;
   filterSystems: IFilterSystem[];
 }
+
+export { StoreProviderProps, IStoreProviderContext };
