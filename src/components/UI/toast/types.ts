@@ -7,7 +7,7 @@ type position =
   | 'bottom-center';
 type theme = 'light' | 'dark' | 'colored';
 
-export interface IToast {
+interface IToast {
   position: position;
   theme: theme;
   autoClose?: 5000;
@@ -19,3 +19,7 @@ export interface IToast {
   draggable?: true;
   pauseOnHover?: true;
 }
+
+type NotifyMessageProps = { message: string; type: 'info' | 'success' | 'warning' | 'error' };
+
+export { IToast, NotifyMessageProps };
