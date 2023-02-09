@@ -6,9 +6,10 @@ const houseList = [
 ];
 
 const services = [
-  { link: 'service-1', id: 1 },
-  { link: 'service-2', id: 2 },
-  { link: 'service-3', id: 3 },
+  { link: 'service-1', id: 1, ico: './assets/icons/calculator-ico.svg' },
+  { link: 'service-2', id: 2, ico: './assets/icons/binoculars-ico.svg' },
+  { link: 'service-3', id: 3, ico: './assets/icons/divider-ico.svg' },
+  { link: 'service-4', id: 4, ico: './assets/icons/engineer-ico.svg' },
 ];
 
 const aboutUs = [

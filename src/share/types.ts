@@ -1,6 +1,7 @@
 interface NavItemProps {
   link: string;
   id: number;
+  ico?: string;
 }
 
 interface IFilterSystem {

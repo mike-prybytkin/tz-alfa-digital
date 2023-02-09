@@ -3,6 +3,8 @@ import SlickSlider from 'components/slick-slider/Slick-slider';
 import ModalWindow from 'components/modal-window/modal-window';
 import { StoreProviderContext } from 'components/store/store-provider';
 import AboutFilterSystemForm from 'components/about-filter-system-form/about-filter-system-form';
+import ServiceBar from 'components/service-bar/service-bar';
+import { services } from 'mocks/nav-menu';
 
 const AboutFilterSystem = () => {
   const context = useContext(StoreProviderContext);
@@ -20,6 +22,7 @@ const AboutFilterSystem = () => {
 
   return (
     <div className="about-filter">
+      <ServiceBar linkInfo={services} />
       <h2 className="about-filter__heading" id="about-filter__heading">
         {name}
       </h2>
