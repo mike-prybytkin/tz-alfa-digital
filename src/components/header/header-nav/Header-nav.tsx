@@ -1,27 +1,42 @@
-import React from 'react';
+import React, { useState } from 'react';
 import NavItemList from '../nav-item-list/Nav-item-list';
 import { houseList, services, aboutUs, blog } from 'mocks/nav-menu';
 
 const HeaderNav = () => {
+  const items = [
+    { id: 'catalog-of-houses', name: 'Каталог домов', itemList: houseList },
+    { id: 'services', name: 'Услуги', itemList: services },
+    { id: 'about-us', name: 'О нас', itemList: aboutUs },
+    { id: 'nav-contacts', name: 'Контакты', itemList: null },
+    { id: 'nav-blog', name: 'Блог', itemList: blog },
+  ];
+
+  const [isNavItemID, setIsNavItemID] = useState('');
+
+  const navItemsHandler = (id: string) => {
+    setIsNavItemID(id);
+  };
+
   return (
     <div className="nav-wrapper">
       <nav className="nav">
         <ul className="nav__items">
-          <li className="nav__item" id="catalog-of-houses">
-            <NavItemList itemName="Каталог домов" linkInfo={houseList} />
-          </li>
-          <li className="nav__item" id="services">
-            <NavItemList itemName="Услуги" linkInfo={services} />
-          </li>
-          <li className="nav__item" id="about-us">
-            <NavItemList itemName="О нас" linkInfo={aboutUs} />
-          </li>
-          <li className="nav__item" id="nav-contacts">
-            <NavItemList itemName="Контакты" linkPath="contacts" linkInfo={null} />
-          </li>
-          <li className="nav__item" id="nav-blog">
-            <NavItemList itemName="Блог" linkInfo={blog} />
-          </li>
+          {items.map((item) => (
+            <li
+              className="nav__item"
+              id={item.id}
+              key={item.id}
+              onClick={() => navItemsHandler(item.id)}
+            >
+              <NavItemList
+                itemName={item.name}
+                linkInfo={item.itemList}
+                id={item.id}
+                isOpenItemId={isNavItemID}
+                linkPath={item.itemList === null ? item.id : null}
+              />
+            </li>
+          ))}
         </ul>
       </nav>
     </div>
