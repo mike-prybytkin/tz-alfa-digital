@@ -2,6 +2,10 @@
   @include flex($justify: space-between);
   padding-top: 30px;
 
+  @include media-desktop {
+    padding-top: 0;
+  }
+
   .block-separator__img {
     width: 240px;
     height: 160px;

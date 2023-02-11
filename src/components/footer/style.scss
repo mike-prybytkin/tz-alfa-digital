@@ -8,6 +8,13 @@
   }
 }
 
+.footer-wrapper {
+  @include media-desktop {
+    gap: 2%;
+    row-gap: 30px;
+  }
+}
+
 .footer-col-1 {
   @include flex($align: flex-start, $flow: column nowrap);
   gap: 50px;
@@ -23,6 +30,10 @@
       max-width: 250px;
       max-height: auto;
     }
+    @include media-desktop {
+      max-width: 200px;
+      max-height: 50px;
+    }
   }
 
   button {
@@ -30,6 +41,10 @@
     height: 64px;
     color: $color-light;
     border: 2px solid $color-light;
+    @include media-desktop {
+      width: 200px;
+      height: 50px;
+    }
   }
 }
 
@@ -55,6 +70,9 @@
         margin-top: 10px;
       }
     }
+  }
+  @include media-desktop {
+    width: 1000px;
   }
 
   ul {
@@ -86,6 +104,10 @@
     margin-left: -6px;
     @include media-big-desktop{
       width: 200px;
+      height: auto;
+    }
+    @include media-desktop {
+      width: 180px;
       height: auto;
     }
   }

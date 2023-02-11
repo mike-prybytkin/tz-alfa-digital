@@ -11,6 +11,7 @@
     margin-bottom: 10px;
     box-shadow: $box-shadow;
     text-align: center;
+    background: $color-light;
     @include media-big-desktop {
       width: 50px;
       height: 44px;

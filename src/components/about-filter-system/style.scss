@@ -4,26 +4,46 @@
 
 .about-filter__heading {
   margin: 40px 0;
+  @include media-desktop {
+    margin: 25px 0;
+    text-align: center;
+  }
 }
 
 .about-filter__content {
   @include flex($justify: flex-start, $align: flex-start);
   gap: 4%;
+  @include media-desktop {
+    gap: 0;
+    flex-direction: column;
+    align-items: center;
+  }
 
   .about-filter__slider-contact {
+    @include media-desktop {
+      @include flex($justify: center, $flow: column nowrap);
+    }
     h4 {
       margin: 80px 0 25px;
+      @include media-desktop {
+        margin: 25px 0;
+      }
     }
   }
 }
 
 .filter-characteristics {
   max-width: 600px;
+  @include flex($justify: space-between, $align: flex-start, $flow: column wrap);
   @include media-big-desktop {
     max-width: 500px;
   }
+  @include media-desktop {
+    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
 
-  @include flex($justify: space-between, $align: flex-start, $flow: column wrap);
   .filter-characteristics__grid {
     max-width: 500px;
     display: grid;
@@ -33,6 +53,9 @@
     font-size: 1.8rem;
     @include media-big-desktop {
       grid-gap: 15px;
+    }
+    @include media-desktop {
+      margin-top: 20px;
     }
 
     &>div:nth-of-type(odd) {
@@ -68,8 +91,12 @@
     @include media-big-desktop {
       margin-top: 0;
     }
+    @include media-desktop {
+      height: auto;
+    }
     h4 {
       margin-bottom: 25px;
+      text-align: center;
     }
 
     div {

@@ -26,7 +26,7 @@ const SampleNextArrow = (props: any) => {
       style={{
         ...style,
         ...byttonStyle,
-        transform: 'translate(70%, -50%)',
+        transform: 'translate(55%, -50%)',
       }}
       onClick={onClick}
     />
@@ -41,7 +41,7 @@ const SamplePrevArrow = (props: any) => {
       style={{
         ...style,
         ...byttonStyle,
-        transform: 'translate(-70%, -50%)',
+        transform: 'translate(-55%, -50%)',
       }}
       onClick={onClick}
     />

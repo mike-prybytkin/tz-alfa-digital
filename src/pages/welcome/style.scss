@@ -15,4 +15,7 @@
   @include media-big-desktop {
     max-width: 1000px;
   }
+  @include media-desktop {
+    max-width: 640px;
+  }
 }

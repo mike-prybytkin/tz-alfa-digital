@@ -1,6 +1,9 @@
 .header-info {
   padding-bottom: 20px;
   align-items: center;
+  @include media-desktop {
+    gap: 1%;
+  }
 }
 
 .header-info__logo-img {
@@ -10,10 +13,16 @@
     max-width: 250px;
     max-height: auto;
   }
+  @include media-desktop {
+    max-width: 200px;
+  }
 }
 
 .header-info__schedule {
   max-width: 215px;
+  @include media-desktop {
+    display: none;
+  }
   p {
     font-weight: 500;
     line-height: 24px;
@@ -43,6 +52,9 @@
       height: 40px;
       line-height: 40px;
     }
+    @include media-desktop {
+      display: none;
+    }
   }
 
   .to-order__link {
@@ -61,6 +73,9 @@
   .contacts__ico {
     @include media-big-desktop {
       transform: scale(0.8);
+    }
+    @include media-desktop {
+      display: none;
     }
   }
 }
@@ -108,6 +123,11 @@
     @include media-big-desktop {
       width: 180px;
       height: 54px;
+    }
+
+    @include media-desktop {
+      width: 150px;
+      height: 50px;
     }
   }
 }

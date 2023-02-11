@@ -33,6 +33,15 @@
   border-radius: $br-radius;
 }
 
+@mixin scrollbar-x ($color, $br-radius) {
+  background-color: $color;
+  border-radius: $br-radius;
+}
+
 @mixin media-big-desktop {
   @media (max-width: $content-width) { @content; }
+}
+
+@mixin media-desktop {
+  @media (max-width: $desktop-width) { @content; }
 }

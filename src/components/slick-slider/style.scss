@@ -10,9 +10,15 @@
     width: 600px;
     height: 250px;
   }
+  @include media-desktop {
+    height: 380px;
+  }
 
   .slick-slider {
     direction:rtl !important;
+    @include media-desktop {
+      direction:ltr !important;
+    }
     
     .slider__preview-img {
       width: 134px;
@@ -30,6 +36,13 @@
         width: 50px;
         height: 50px;
         font-size: 3rem;
+        border-radius: 3px 0 0 0;
+        @include media-desktop {
+          right: 4%;
+          width: 40px;
+          height: 40px;
+          font-size: 2.2rem;
+        }
       }
 
       .slider__select-img {
@@ -40,16 +53,19 @@
           width: 440px;
           height: 250px;
         }
+        @include media-desktop {
+          width: 96%;
+          height: 250px;
+        }
       }
     }
     
     .slick-dots {
       display: flex !important;
       flex-direction: column;
-      height: 100%;
+      width: auto;
       left: 0;
       top: 0;
-      width: auto;
       height: 435px;
       padding-left: 20px;
       @extend %scrollbar;
@@ -57,6 +73,13 @@
         height: 250px;
         padding-left: 0;
       }
+      @include media-desktop {
+        @include flex($justify: flex-start, $flow: row nowrap);
+        width: 100%;
+        top: 260px;
+        height: 118px;
+      }
+      
       
       li {
         @extend %transition;
@@ -80,4 +103,7 @@
 .slider__modal-img {
   width: 50vw;
   height: auto;
+  @include media-big-desktop {
+    width: 60vw;
+  }
 }

@@ -7,6 +7,9 @@
   @include media-big-desktop {
     background-position: bottom -300px right -80px;
   }
+  @include media-desktop {
+    background-position: bottom -300px right -280px;
+  }
 
   align-items: center;
   .contacts-section__background {
@@ -23,6 +26,10 @@
       height: auto;
       @include media-big-desktop {
         left: -280px;
+      }
+      @include media-desktop {
+        left: -150px;
+        top: -150px;
       }
     } 
     .contacts-section__filter-img {
@@ -45,6 +52,9 @@
     @include media-big-desktop {
       width: 150px;
       height: auto;
+    }
+    @include media-desktop {
+      display: none;
     }
   }
 }
