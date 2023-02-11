@@ -6,4 +6,5 @@ export interface NavItemListProps {
   linkPath?: string | null;
   id: string;
   isOpenItemId: string;
+  onCloseBurger: () => void;
 }

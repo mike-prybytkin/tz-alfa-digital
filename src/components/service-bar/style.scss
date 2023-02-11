@@ -3,6 +3,9 @@
   right: 0;
   top: 20px;
   @include flex($flow: column);
+  @include media-tablet {
+    display: none;
+  }
 
   .service-bar__link {
     width: 87px;

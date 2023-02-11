@@ -4,6 +4,9 @@ html {
   @include media-desktop {
     font-size: 9px;
   }
+  @include media-tablet {
+    font-size: 8.5px;
+  }
 }
 
 body {

@@ -10,6 +10,9 @@
   @include media-desktop {
     background-position: bottom -300px right -280px;
   }
+  @include media-tablet {
+    padding-bottom: 20px;
+  }
 
   align-items: center;
   .contacts-section__background {
@@ -36,6 +39,9 @@
       width: 40vw;
       height: auto;
       margin-bottom: -4px;
+      @include media-tablet {
+        display: none;
+      }
     }
   }
 }

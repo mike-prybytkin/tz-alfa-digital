@@ -2,6 +2,7 @@ interface NavItemProps {
   link: string;
   id: number;
   ico?: string;
+  onCloseBurger?: () => void;
 }
 
 interface IFilterSystem {

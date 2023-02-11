@@ -7,7 +7,7 @@
   width: max-content;
   background: $color-main;
   box-shadow: $box-shadow;
-  padding: 10px;
+  padding: 5px 40px;
   position: absolute;
   top: 0px;
   opacity: 0;
@@ -16,10 +16,11 @@
 
   li {
     cursor: pointer;
-    margin-bottom: 10px;
-
-    &:last-of-type {
-      margin-bottom: 0;
+    margin: 5px 0;
+  }
+  @include media-tablet {
+    li {
+      margin: 10px 0;
     }
   }
 }

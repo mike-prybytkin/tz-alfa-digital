@@ -4,7 +4,7 @@ import NavItem from '../nav-item/Nav-item';
 import { NavItemListProps } from './types';
 
 const NavItemList = (props: NavItemListProps) => {
-  const { itemName, linkInfo, linkPath, isOpenItemId, id } = props;
+  const { itemName, linkInfo, linkPath, isOpenItemId, id, onCloseBurger } = props;
   const [open, setOpen] = useState(false);
 
   const icoClass =
@@ -37,7 +37,7 @@ const NavItemList = (props: NavItemListProps) => {
       {linkInfo ? (
         <ul className={navItemListClass}>
           {linkInfo.map((link) => (
-            <NavItem link={link.link} key={link.id} id={link.id} />
+            <NavItem link={link.link} key={link.id} id={link.id} onCloseBurger={onCloseBurger} />
           ))}
         </ul>
       ) : (

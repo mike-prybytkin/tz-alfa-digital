@@ -12,15 +12,28 @@ const HeaderNav = () => {
   ];
 
   const [isNavItemID, setIsNavItemID] = useState('');
+  const [isBurgerOpen, setIsBurgerOpen] = useState(false);
 
   const navItemsHandler = (id: string) => {
     setIsNavItemID(id);
   };
 
+  const toggleBurger = () => {
+    setIsBurgerOpen(!isBurgerOpen);
+  };
+
+  const closeBurger = () => {
+    setIsBurgerOpen(false);
+  };
+
+  const burgerButtonClass = isBurgerOpen ? 'open nav__burger-button' : 'nav__burger-button';
+  const burgerButtonIcoClass = isBurgerOpen ? 'open nav__burger-ico' : 'nav__burger-ico';
+  const navItemsClass = isBurgerOpen ? 'open-burger nav__items' : 'nav__items';
+
   return (
     <div className="nav-wrapper">
       <nav className="nav">
-        <ul className="nav__items">
+        <ul className={navItemsClass}>
           {items.map((item) => (
             <li
               className="nav__item"
@@ -34,10 +47,14 @@ const HeaderNav = () => {
                 id={item.id}
                 isOpenItemId={isNavItemID}
                 linkPath={item.itemList === null ? item.id : null}
+                onCloseBurger={closeBurger}
               />
             </li>
           ))}
         </ul>
+        <button className={burgerButtonClass} onClick={toggleBurger}>
+          <i className={`${burgerButtonIcoClass} fa fa-chevron-down`}></i>
+        </button>
       </nav>
     </div>
   );
