@@ -70,6 +70,7 @@ const SliderAllFilters = () => {
     responsive: [
       { breakpoint: 1580, settings: { slidesToShow: 2 } },
       { breakpoint: 768, settings: { slidesToShow: 1 } },
+      { breakpoint: 500, settings: { slidesToShow: 1, arrows: false } },
     ],
   };
 

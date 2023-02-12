@@ -16,6 +16,10 @@
   @include media-tablet {
     width: 97vw;
   }
+  @include media-mobile-big {
+    width: 95vw;
+  }
+  
 
   .slick-slider {
     direction:rtl !important;
@@ -114,5 +118,8 @@
   height: auto;
   @include media-big-desktop {
     width: 60vw;
+  }
+  @include media-mobile-big {
+    width: 90vw;
   }
 }

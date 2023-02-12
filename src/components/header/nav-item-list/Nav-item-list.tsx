@@ -29,7 +29,7 @@ const NavItemList = (props: NavItemListProps) => {
         <span>{itemName}</span>
       ) : (
         <NavLink className="link" to={`nav/${linkPath}`}>
-          {itemName}
+          <span onClick={onCloseBurger}>{itemName}</span>
         </NavLink>
       )}
 

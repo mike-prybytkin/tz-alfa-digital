@@ -4,6 +4,10 @@
   @include media-desktop {
     gap: 1%;
   }
+  @include media-mobile-big {
+    justify-content: center;
+    gap: 10px;
+  }
 }
 
 .header-info__logo-img {
@@ -139,10 +143,14 @@
     @include media-desktop {
       width: 150px;
       height: 50px;
+      margin-right: 4px;
     }
     @include media-tablet {
       width: 100px;
       height: 40px;
+    }
+    @include media-mobile-big {
+      display: none;
     }
   }
 }

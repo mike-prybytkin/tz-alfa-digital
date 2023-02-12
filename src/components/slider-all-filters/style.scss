@@ -26,6 +26,9 @@
     .card__img {
       width: 115px;
       height: auto;
+      @include media-mobile-big {
+        width: 105px;
+      }
     }
   }
 

@@ -6,6 +6,9 @@
   @include media-big-desktop {
     width: 400px;
   }
+  @include media-mobile-big {
+    width: 100%;
+  }
 
   .user-contacts-form__button {
     width: 100%;

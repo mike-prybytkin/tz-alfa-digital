@@ -57,6 +57,12 @@
     @include media-desktop {
       margin-top: 20px;
     }
+    @include media-mobile-big {
+      grid-gap: 10px;
+      font-size: 1.6rem;
+      width: 300px;
+      grid-template-columns: 3fr 2fr;
+    }
 
     &>div:nth-of-type(odd) {
       text-align: left;

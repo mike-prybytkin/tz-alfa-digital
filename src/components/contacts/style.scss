@@ -4,6 +4,7 @@
   position: relative;
   z-index: 1;
   overflow: hidden;
+  align-items: center;
   @include media-big-desktop {
     background-position: bottom -300px right -80px;
   }
@@ -14,10 +15,12 @@
     padding-bottom: 20px;
   }
 
-  align-items: center;
   .contacts-section__background {
     position: relative;
     margin-top: 170px;
+    @include media-mobile-big {
+      display: none;
+    }
 
     .contacts-section__sky-img {
       position: absolute;
@@ -50,6 +53,9 @@
   @include media-big-desktop {
     text-align: center;
     max-width: 400px;
+  }
+  @include media-mobile-big {
+    margin-right: 8px;
   }
 }
 
