@@ -1,0 +1,8 @@
+.link {
+  @extend %transition;
+
+  &:hover {
+    text-shadow: $text-shadow-link;
+    transform: scale(1.05);
+  }
+}

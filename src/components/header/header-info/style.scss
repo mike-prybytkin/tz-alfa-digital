@@ -1,0 +1,156 @@
+.header-info {
+  padding-bottom: 20px;
+  align-items: center;
+  @include media-desktop {
+    gap: 1%;
+  }
+  @include media-mobile-big {
+    justify-content: center;
+    gap: 10px;
+  }
+}
+
+.header-info__logo-img {
+  max-width: 297px;
+  max-height: 60px;
+  @include media-big-desktop {
+    max-width: 250px;
+    max-height: auto;
+  }
+  @include media-desktop {
+    max-width: 200px;
+  }
+  @include media-tablet {
+    max-width: 180px;
+  }
+}
+
+.header-info__schedule {
+  max-width: 215px;
+  @include media-desktop {
+    display: none;
+  }
+  p {
+    font-weight: 500;
+    line-height: 24px;
+  }
+  @include media-big-desktop {
+    font-size: 1.6rem;
+    max-width: 190px;
+  }
+}
+
+.header-info__to-order {
+  display: flex;
+  align-items: center;
+  @include media-tablet {
+    display: none;
+  }
+
+  .to-order__icon {
+    display: inline-block;
+    text-align: center;
+    line-height: 50px;
+    width: 50px;
+    height: 50px;
+    border: 7px solid $color-border-around-ico;
+    border-radius: 50%;
+    font-size: 2rem;
+    margin-right: 8px;
+    @include media-big-desktop {
+      width: 40px;
+      height: 40px;
+      line-height: 40px;
+    }
+    @include media-desktop {
+      display: none;
+    }
+  }
+
+  .to-order__link {
+    border-bottom: 1px solid $color-text-dark; 
+    padding-bottom: 5px;
+  }
+}
+
+.contacts {
+  @include flex();
+  gap: 4px;
+  @include media-big-desktop {
+    gap: 0;
+  }
+
+  .contacts__ico {
+    @include media-big-desktop {
+      transform: scale(0.8);
+    }
+    @include media-desktop {
+      display: none;
+    }
+  }
+}
+
+.contacts-wrapper {
+  position: relative;
+
+  .contacts__tel {
+    @include font-heading($size: 2.2rem, $weight: 800);
+    @include media-big-desktop {
+      font-size: 1.8rem;
+    }
+  }
+
+  .contacts__icons {
+    padding-top: 6px;
+    @include flex($justify: space-around);
+    @include media-tablet {
+      padding-top: 0;
+    }
+    .ico {
+      display: inline-block;
+      width: 30px;
+      height: 26px;
+      background-position: center center;
+      background-size: contain;
+      @include media-big-desktop {
+        transform: scale(0.8);
+      }
+      @include media-tablet {
+        transform: scale(0.7);
+      }
+    }
+    .viber {
+      background: url(../../../../public/assets/icons/viber-ico.png) no-repeat;
+    }
+    .watsapp {
+      background: url(../../../../public/assets/icons/whatsapp-ico.png) no-repeat;
+    }
+    .telegram {
+      background: url(../../../../public/assets/icons/telegram-ico.png) no-repeat;
+    }
+  }
+}
+
+.header-info__button {
+  button {
+    width: 238px;
+    height: 64px;
+    border-radius: 6px;
+    @include media-big-desktop {
+      width: 180px;
+      height: 54px;
+    }
+    @include media-desktop {
+      width: 150px;
+      height: 50px;
+      margin-right: 4px;
+    }
+    @include media-tablet {
+      width: 100px;
+      height: 40px;
+    }
+    @include media-mobile-big {
+      display: none;
+    }
+  }
+}

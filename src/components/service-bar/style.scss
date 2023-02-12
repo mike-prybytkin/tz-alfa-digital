@@ -1,0 +1,44 @@
+.service-bar {
+  position: absolute;
+  right: 0;
+  top: 20px;
+  @include flex($flow: column);
+  @include media-tablet {
+    display: none;
+  }
+
+  .service-bar__link {
+    width: 87px;
+    height: 64px;
+    display: inline-block;
+    margin-bottom: 10px;
+    box-shadow: $box-shadow;
+    text-align: center;
+    background: $color-light;
+    @include media-big-desktop {
+      width: 50px;
+      height: 44px;
+    }
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+
+    &:hover {
+      .service-bar__link-img {
+        transform: scale(1.1);
+      }
+    }
+
+    .service-bar__link-img {
+      @extend %transition;
+      width: 36px;
+      height: 36px;
+      margin-top: calc((64px - 36px) / 2);
+      @include media-big-desktop {
+        width: 26px;
+        height: 26px;
+        margin-top: calc((44px - 26px) / 2);
+      }
+    }
+  }
+}

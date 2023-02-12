@@ -1,0 +1,27 @@
+.welcome {
+  .welcome__section-heading {
+    margin: 0;
+    position: relative;
+    top: -30px;
+    @include media-big-desktop {
+      text-align: center;
+    }
+  }
+}
+
+.welcome__slider-all-filters-wrapper {
+  max-width: 1400px;
+  margin: auto;
+  @include media-big-desktop {
+    max-width: 1000px;
+  }
+  @include media-desktop {
+    max-width: 640px;
+  }
+  @include media-tablet {
+    max-width: 340px;
+  }
+  @include media-mobile-big {
+    max-width: 320px;
+  }
+}

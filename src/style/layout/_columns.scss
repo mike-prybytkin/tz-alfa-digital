@@ -1,0 +1,15 @@
+.layout-2-column {
+  @include columns();
+}
+
+.layout-3-column {
+  @include columns();
+}
+
+.layout-4-column {
+  @include columns();
+}
+
+.layout-5-column {
+  @include columns();
+}

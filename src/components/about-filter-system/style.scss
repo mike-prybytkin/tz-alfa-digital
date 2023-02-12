@@ -1,0 +1,117 @@
+.about-filter {
+  position: relative;
+}
+
+.about-filter__heading {
+  margin: 40px 0;
+  @include media-desktop {
+    margin: 25px 0;
+    text-align: center;
+  }
+}
+
+.about-filter__content {
+  @include flex($justify: flex-start, $align: flex-start);
+  gap: 4%;
+  @include media-desktop {
+    gap: 0;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-filter__slider-contact {
+    @include media-desktop {
+      @include flex($justify: center, $flow: column nowrap);
+    }
+    h4 {
+      margin: 80px 0 25px;
+      @include media-desktop {
+        margin: 25px 0;
+      }
+    }
+  }
+}
+
+.filter-characteristics {
+  max-width: 600px;
+  @include flex($justify: space-between, $align: flex-start, $flow: column wrap);
+  @include media-big-desktop {
+    max-width: 500px;
+  }
+  @include media-desktop {
+    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .filter-characteristics__grid {
+    max-width: 500px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 3fr 1fr;
+    grid-gap: 30px;
+    font-size: 1.8rem;
+    @include media-big-desktop {
+      grid-gap: 15px;
+    }
+    @include media-desktop {
+      margin-top: 20px;
+    }
+    @include media-mobile-big {
+      grid-gap: 10px;
+      font-size: 1.6rem;
+      width: 300px;
+      grid-template-columns: 3fr 2fr;
+    }
+
+    &>div:nth-of-type(odd) {
+      text-align: left;
+      font-weight: 500;
+    }
+    &>div:nth-of-type(even) {
+      text-align: right;
+    }
+  }
+
+  .filter-characteristics__prise {
+    margin-top: 129px;
+    font-size: 1.8rem;
+    font-weight: 500;
+    border: solid 1px $color-main;
+    padding: 20px;
+    border-radius: 3px;
+    @include media-big-desktop {
+      margin-top: 30px;
+    }
+    span {
+      @include font-heading ($size: 2.8rem, $color: $color-main);
+      @include media-big-desktop {
+        font-size: 2.2rem;
+      }
+    }
+  }
+
+  .filter-characteristics__description {
+    height: 340px;
+    margin-top: 50px;
+    @include media-big-desktop {
+      margin-top: 0;
+    }
+    @include media-desktop {
+      height: auto;
+    }
+    h4 {
+      margin-bottom: 25px;
+      text-align: center;
+    }
+
+    div {
+      font-size: 1.8rem;
+      line-height: 2.8rem;
+      @include media-big-desktop {
+        font-style: 1.6rem;
+        line-height: 2.4rem;
+      }
+    }
+  }
+}

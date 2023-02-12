@@ -1,0 +1,59 @@
+@mixin font-primary ($size: 1.6rem, $weight: 400, $color: $color-text-dark) {
+  font-family: 'Raleway', 'Verdana', 'Geneva', sans-serif;
+  font-size: $size;
+  font-weight: $weight;
+  color: $color;
+}
+
+@mixin font-heading ($size: 2.4rem, $weight: 900, $color: $color-text-heading) {
+  font-family: 'Montserrat', 'Arial Narrow', 'Arial', sans-serif;
+  font-size: $size;
+  font-weight: $weight;
+  color: $color;
+}
+
+@mixin flex ($justify: center, $align: center, $flow: row wrap) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-flow: $flow;
+}
+
+@mixin columns () {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  >* {
+    flex-basis: auto;
+  }
+}
+
+@mixin scrollbar ($color, $br-radius) {
+  background-color: $color;
+  border-radius: $br-radius;
+}
+
+@mixin scrollbar-x ($color, $br-radius) {
+  background-color: $color;
+  border-radius: $br-radius;
+}
+
+@mixin media-big-desktop {
+  @media (max-width: $content-width) { @content; }
+}
+
+@mixin media-desktop {
+  @media (max-width: $desktop-width) { @content; }
+}
+
+@mixin media-tablet {
+  @media (max-width: $tablet-width) { @content; }
+}
+
+@mixin media-mobile-big {
+  @media (max-width: $mobile-big-width) { @content; }
+}
+
+@mixin media-mobile {
+  @media (max-width: $mobile-width) { @content; }
+}

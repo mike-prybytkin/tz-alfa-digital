@@ -1,0 +1,43 @@
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+  @include media-desktop {
+    font-size: 9px;
+  }
+  @include media-tablet {
+    font-size: 8.5px;
+  }
+}
+
+body {
+  background-color: $color-bg-body;
+  position: relative;
+  @include font-primary();
+  @extend %scrollbar;
+  overflow-y: overlay;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+  color: inherit;
+  &:focus {
+    outline: none;
+  }
+}
+
+li {
+  list-style-type: none;
+}
+
+h2 {
+  @include font-heading($size: 3.8rem);
+}
+
+h3 {
+  @include font-heading ($size: 3.2rem);
+}
+
+h4 {
+  @include font-heading ($size: 2.4rem, $weight: 800);
+}

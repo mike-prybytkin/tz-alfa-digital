@@ -1,0 +1,13 @@
+.communication-page {
+  @include flex($justify: center, $flow: column nowrap);
+  padding: 5% 0 10%;
+  @include media-mobile-big {
+    margin-right: 8px;
+  }
+
+  .communication-page__heading {
+    max-width: 600px;
+    text-align: center;
+    margin-top: 0;
+  }
+}

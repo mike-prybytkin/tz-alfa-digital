@@ -1,0 +1,5 @@
+.App {
+  background: url(../../../public/assets/bg-img/bg-about-section.png) no-repeat;
+  height: 100vh;
+  @include flex($justify: space-between, $align: inherit, $flow: column nowrap);
+}

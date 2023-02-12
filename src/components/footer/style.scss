@@ -1,0 +1,129 @@
+.footer {
+  background: $color-bg-footer;
+  padding: 2% 5%;
+  color: $color-light;
+  gap: 5%;
+  @include media-big-desktop {
+    padding: 2% 2%;
+  }
+  @include media-tablet {
+    padding: 5% 2%;
+  }
+}
+
+.footer-wrapper {
+  @include media-desktop {
+    gap: 2%;
+    row-gap: 30px;
+  }
+  @include media-tablet {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.footer-col-1 {
+  @include flex($align: flex-start, $flow: column nowrap);
+  gap: 50px;
+  @include media-big-desktop {
+      gap: 30px;
+  }
+
+  .footer-col-1__logo-img {
+    width: 284px;
+    height: 57px;
+    cursor: pointer;
+    @include media-big-desktop {
+      max-width: 250px;
+      max-height: auto;
+    }
+    @include media-desktop {
+      max-width: 200px;
+      max-height: 50px;
+    }
+  }
+
+  button {
+    width: 238px;
+    height: 64px;
+    color: $color-light;
+    border: 2px solid $color-light;
+    @include media-desktop {
+      width: 200px;
+      height: 50px;
+    }
+  }
+}
+
+.footer-col-2,
+.footer-col-3 {
+  ul {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    @include flex($justify: space-around, $align: flex-start, $flow: column nowrap);
+    @include media-tablet {
+      @include flex($justify: space-around, $align: flex-start, $flow: row wrap);
+      gap: 20px;
+    }
+
+    li {
+      cursor: pointer;
+    }
+  }
+}
+
+.footer-col-4 {
+  max-width: 270px;
+  @include media-big-desktop {
+    p {
+      &:first-of-type {
+        margin-top: 10px;
+      }
+    }
+  }
+  @include media-desktop {
+    width: 1000px;
+  }
+  @include media-tablet {
+    width: 100%;
+    text-align: center;
+  }
+
+  ul {
+    padding: 0;
+    li {
+      display: inline-block;
+      margin-right: 16px;
+      &:last-of-type {
+        margin-right: 0;
+      }
+      a {
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+  }
+
+  .footer-col-4__author {
+    margin: 32px 0 0;
+    @include media-big-desktop{
+      margin-top: 20px;
+    }
+  }
+
+  .footer-col-4__logo-img {
+    width: 240px;
+    height: 61px;
+    margin-left: -6px;
+    @include media-big-desktop{
+      width: 200px;
+      height: auto;
+    }
+    @include media-desktop {
+      width: 180px;
+      height: auto;
+    }
+  }
+}

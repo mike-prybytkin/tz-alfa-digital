@@ -1,0 +1,44 @@
+%transition {
+  transition: all .3s ease-in-out;
+}
+
+%button-colored {
+  @extend %transition;
+  background: $color-main;
+  color: $color-light;
+  border: 1px solid $color-main;
+  border-radius: 3px;
+  &:hover {
+    border-color: $color-main-hover;
+    background: $color-main-hover;
+  }
+}
+
+%button-bordered {
+  @extend %transition;
+  background: transparent;
+  color: $color-text-dark;
+  border: 1px solid $color-button-border;
+  border-radius: 3px;
+  &:hover {
+    box-shadow: $box-shadow;
+    text-shadow: $text-shadow-link;
+  }
+}
+
+%scrollbar {
+  overflow-y: auto;
+  overflow-x: auto;
+  &::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  &::-webkit-scrollbar-track {
+    @include scrollbar($color: $color-bg-scrollbar, $br-radius: 4px);
+  }
+
+  &::-webkit-scrollbar-thumb {
+    @include scrollbar($color: $color-main, $br-radius: 4px);
+  }
+}

@@ -1,0 +1,7 @@
+.wrapper {
+  max-width: $content-width;
+  margin: auto;
+  @include media-big-desktop {
+    padding: 0 1%;
+  }
+}
